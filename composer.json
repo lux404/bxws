@@ -5,14 +5,24 @@
 	"license": "MIT",
 	"autoload": {
 		"psr-4": {
-			"Proxy\\Plugin\\": "src/"
+			"Proxy\\Plugin\\": "src/",
+			"SerpScraper\\": "src/"
 		},
 		"files": [
-			"src/utils.php"
+			"src/utils.php",
+			"src/global.php"
 		]
 	},
 	"require": {
 		"athlon1600/php-proxy": "^5.0",
-		"athlon1600/youtube-downloader": "^2.0"
+		"athlon1600/youtube-downloader": "^2.0",
+		"ext-mbstring": "*",
+		"ext-curl": "*",
+		"ext-xml": "*",
+		"athlon1600/php-curl-client": "^1.1",
+		"athlon1600/php-captcha-solver": "^2.0",
+		"ext-curl": "*",
+		"stripe/stripe-php": "^7",
+		"php": ">=5.6.0"
 	}
 }
